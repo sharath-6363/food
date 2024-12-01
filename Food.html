@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Style.css">
+  <title>Order Food</title>
+</head>
+<body>
+  <header class="imagecolor" id="Home">
+    <div class="Home-margi">
+      <h1></h1>
+      <p>Express Delivery <br>1800 258 888</p>
+    </div>
+    <nav class="NavBar">
+      <a href="#Home">Home</a>
+      <a href="#Menu">Menu</a>
+      <a href="#Story">Our Story</a>
+      <a href="#Contact">Contact Us</a>
+    </nav>
+    <section class="Home">
+      <img src="Home.png" id="Homeimage" class="Homeimage" alt="Decorative image showing food items">
+      <h1>𝒶𝓇𝑒 𝓎𝑜𝓊 𝒽𝓊𝓃𝑔𝓇𝓎</h1>
+      <p>𝔻𝕆ℕ𝕋 𝕎A𝕀𝕋</p>
+      <h3 class="Op">LET'S START TO ORDER NOW</h3>
+      <hr style="width: 50%;position: absolute;top: 55%;left: 110px;margin-top: 30px; " class="linebar">
+      <button class="btn">Order Now</button>
+    </section>
+  </header>
+  
+  <div>
+    <section class="Order" id="Menu">
+      <div  class="lightbar"></div>
+      <div class="heder">
+       
+      <h4 >ℂℍ𝕆𝕆𝕊𝔼 & 𝔼ℕ𝕁𝕆𝕐</h4>
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vitae! At, beatae officiis. Esse molestias id harum magnam sequi voluptatibus unde asperiores, laborum ipsa provident libero et consequuntur beatae! Neque.</P>
+      </div>
+      <div class="order-img">
+        <div>
+          <img src="order1.png" alt="order2">
+          <h1>Lorem ipsum dolor .</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed </p>
+          <button>Order Now</button>
+        </div>
+        <div>
+          <img src="order2.png" alt="order22">
+          <h1>Lorem ipsum dolor .</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed </p>
+          <button>Order Now</button>
+
+        </div>
+        <div>
+          <img src="order3.png" alt="order6">
+          <h1>Lorem ipsum dolor .</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, diam sed </p>
+          <button>Order Now</button>
+
+        </div>
+
+      </div>
+      </div>
+      <div>
+        <section class="events" id="Story">
+          <span>
+          <h2>
+            Discover
+          </h2>
+          <h1>𝕌ℙℂ𝕆𝕄𝕀ℕ𝔾 𝔼𝕍𝔼ℕ𝕋𝕊</h1></span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cupiditate illum exercitationem, soluta doloribus ipsa. Ea maiores mollitia voluptatem harum temporibus reiciendis veniam recusandae adipisci consectetur blanditiis. Praesentium, accusantium maxime!</p>
+          <img src="co5Bg.jpeg" alt="" class="bgimg">
+          <div class="carousel-container">
+            <div class="carousel-slide">
+              <img src="Co1.jpg" alt="Slide 1">
+              <img src="co2.avif" alt="Slide 2">
+              <img src="co3.avif" alt="Slide 3">
+              <img src="co4.avif" alt="Slide 4">
+
+            </div>
+          
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+          </div>
+          <div class="event">
+            <img src="Ban.avif" alt="hedh" id="img1">
+            <img src="b2.jfif" alt="3edd">
+            <img src="b3.jpg" alt="7dss">
+          </div>
+        </section>
+      </div>
+    </section>
+    <div>
+    <section class="contact">
+      <h1>Contect Me</h1>
+    </section></div>
+
+  <script>
+    let currentIndex = 0;
+  
+    function moveSlide(direction) {
+      const slides = document.querySelector(".carousel-slide");
+      const totalSlides = slides.children.length;
+      currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+  </script>
+</body>
+</html>
+mar
